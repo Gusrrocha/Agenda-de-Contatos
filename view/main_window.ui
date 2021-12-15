@@ -91,6 +91,20 @@
         </property>
        </widget>
       </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Lixeira</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../assets/icons/icontrash.png</normaloff>../assets/icons/icontrash.png</iconset>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
     <item>
