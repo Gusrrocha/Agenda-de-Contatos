@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>785</width>
-    <height>554</height>
+    <width>1067</width>
+    <height>599</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,17 +15,15 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <widget class="QLabel" name="contatos_label">
+    <widget class="QLabel" name="label_contatos">
      <property name="font">
       <font>
-       <family>Arial Black</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
+       <pointsize>15</pointsize>
        <bold>true</bold>
       </font>
      </property>
      <property name="text">
-      <string>Contatos</string>
+      <string>Contatos ( .. )</string>
      </property>
     </widget>
    </item>
@@ -39,11 +37,11 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>765</width>
-        <height>501</height>
+        <width>1047</width>
+        <height>549</height>
        </rect>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <layout class="QVBoxLayout" name="painel_contatos"/>
        </item>

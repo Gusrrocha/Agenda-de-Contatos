@@ -16,7 +16,17 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="2">
+     <item row="4" column="3">
+      <widget class="QLineEdit" name="email"/>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>Observações</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
       <widget class="QLineEdit" name="name"/>
      </item>
      <item row="1" column="1">
@@ -26,10 +36,10 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="2">
+     <item row="1" column="3">
       <widget class="QLineEdit" name="surname"/>
      </item>
-     <item row="2" column="2">
+     <item row="2" column="3">
       <widget class="QLineEdit" name="company"/>
      </item>
      <item row="3" column="1">
@@ -39,7 +49,7 @@
        </property>
       </widget>
      </item>
-     <item row="3" column="2">
+     <item row="3" column="3">
       <widget class="QLineEdit" name="cargo"/>
      </item>
      <item row="5" column="0">
@@ -163,7 +173,7 @@
        </property>
       </widget>
      </item>
-     <item row="5" column="2">
+     <item row="5" column="3">
       <widget class="QLineEdit" name="telefone"/>
      </item>
      <item row="0" column="1">
@@ -173,15 +183,15 @@
        </property>
       </widget>
      </item>
-     <item row="4" column="2">
-      <widget class="QLineEdit" name="email"/>
+     <item row="6" column="3">
+      <widget class="QLineEdit" name="obs"/>
      </item>
     </layout>
    </item>
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="fechar">
        <property name="text">
         <string>Fechar</string>
        </property>
@@ -201,7 +211,7 @@
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="salvar">
        <property name="text">
         <string>Salvar</string>
        </property>

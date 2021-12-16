@@ -1,6 +1,15 @@
 from qt_core import *
-
-class ContatoPage(QWidget):
+import model.contato_dao as contato_dao
+from controller.card_contatos import CardContatos
+class ContatosPage(QWidget):
     def __init__(self):
         super().__init__()
-        uic.loadUi('view/clientes_page.ui')
+        uic.loadUi('view/contatos_page.ui', self)
+
+    def load(self):
+        lista = contato_dao.selectAll()
+        for c in lista:
+            self.painel_contatos.addWidget(CardContatos(c))
+        
+        # atualizar a contagem
+        self.label_contatos.setText(f'Contatos ({len(lista)})')
