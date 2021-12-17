@@ -5,6 +5,7 @@ class ContatosPage(QWidget):
     def __init__(self):
         super().__init__()
         uic.loadUi('view/contatos_page.ui', self)
+        self.load()
 
     def load(self):
         lista = contato_dao.selectAll()
