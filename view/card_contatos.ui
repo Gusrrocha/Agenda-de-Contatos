@@ -16,6 +16,12 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QFrame" name="frame">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QFrame::hover {background-color: rgb(255, 255, 255);}</string>
+     </property>
      <property name="frameShape">
       <enum>QFrame::Box</enum>
      </property>
@@ -55,7 +61,21 @@
       </item>
       <item>
        <layout class="QGridLayout" name="gridLayout">
-        <item row="0" column="4">
+        <item row="0" column="1">
+         <widget class="QLabel" name="email">
+          <property name="text">
+           <string>email</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="nome">
+          <property name="text">
+           <string>Nome</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
          <widget class="QPushButton" name="excluir_btn">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -99,28 +119,7 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="0">
-         <widget class="QLabel" name="nome">
-          <property name="text">
-           <string>Nome</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <widget class="QLabel" name="email">
-          <property name="text">
-           <string>email</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="2">
-         <widget class="QLabel" name="telefone">
-          <property name="text">
-           <string>telefone</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="3">
+        <item row="0" column="4">
          <widget class="QPushButton" name="editar_btn">
           <property name="minimumSize">
            <size>
@@ -155,6 +154,50 @@
           </property>
           <property name="flat">
            <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="telefone">
+          <property name="text">
+           <string>telefone</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QCheckBox" name="fav">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="toolTip">
+           <string>Marcar como favorito</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
           </property>
          </widget>
         </item>

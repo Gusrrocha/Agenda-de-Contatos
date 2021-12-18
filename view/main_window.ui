@@ -118,6 +118,17 @@
          </widget>
         </item>
         <item>
+         <widget class="QPushButton" name="contatos_btn">
+          <property name="text">
+           <string>Contatos</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../assets/icons/icontact.png</normaloff>../assets/icons/icontact.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
          <spacer name="verticalSpacer_2">
           <property name="orientation">
            <enum>Qt::Vertical</enum>

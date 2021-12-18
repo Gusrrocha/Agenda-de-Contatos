@@ -7,97 +7,204 @@
     <x>0</x>
     <y>0</y>
     <width>769</width>
-    <height>548</height>
+    <height>589</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout_4">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QPushButton" name="fechar">
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>Fechar</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../assets/icons/iclose.png</normaloff>../assets/icons/iclose.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>24</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="img">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>../assets/icons/icontacto.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="nome_label">
+              <property name="text">
+               <string>Nome do contato</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="fav">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>Favoritar contato</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="salvar">
+              <property name="text">
+               <string>Salvar</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
    <item>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="4" column="3">
-      <widget class="QLineEdit" name="email"/>
-     </item>
-     <item row="6" column="1">
-      <widget class="QLabel" name="label_10">
-       <property name="text">
-        <string>Observações</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="3">
-      <widget class="QLineEdit" name="name"/>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLabel" name="label_2">
-       <property name="text">
-        <string>Sobrenome</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
-      <widget class="QLineEdit" name="surname"/>
-     </item>
-     <item row="2" column="3">
-      <widget class="QLineEdit" name="company"/>
-     </item>
-     <item row="3" column="1">
-      <widget class="QLabel" name="label_4">
-       <property name="text">
-        <string>Cargo</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="3">
-      <widget class="QLineEdit" name="cargo"/>
-     </item>
-     <item row="5" column="0">
-      <widget class="QLabel" name="label_5">
-       <property name="sizePolicy">
-        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-         <horstretch>0</horstretch>
-         <verstretch>0</verstretch>
-        </sizepolicy>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap>../assets/icons/icontel.png</pixmap>
-       </property>
-       <property name="scaledContents">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <widget class="QLabel" name="label_7">
-       <property name="text">
-        <string>E-mail</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLabel" name="label_3">
-       <property name="text">
-        <string>Empresa</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QLabel" name="label_8">
-       <property name="text">
-        <string>Telefone</string>
-       </property>
-      </widget>
-     </item>
      <item row="0" column="0">
       <widget class="QLabel" name="label_9">
        <property name="sizePolicy">
@@ -123,6 +230,13 @@
        </property>
       </widget>
      </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Telefone</string>
+       </property>
+      </widget>
+     </item>
      <item row="4" column="0">
       <widget class="QLabel" name="label_6">
        <property name="sizePolicy">
@@ -145,6 +259,13 @@
        </property>
        <property name="scaledContents">
         <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Nome</string>
        </property>
       </widget>
      </item>
@@ -176,44 +297,81 @@
      <item row="5" column="3">
       <widget class="QLineEdit" name="telefone"/>
      </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>Nome</string>
-       </property>
-      </widget>
-     </item>
      <item row="6" column="3">
       <widget class="QLineEdit" name="obs"/>
      </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QPushButton" name="fechar">
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_3">
        <property name="text">
-        <string>Fechar</string>
+        <string>Empresa</string>
        </property>
       </widget>
      </item>
-     <item>
-      <spacer name="horizontalSpacer">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+     <item row="4" column="3">
+      <widget class="QLineEdit" name="email"/>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLineEdit" name="name"/>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>Observações</string>
        </property>
-       <property name="sizeHint" stdset="0">
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QLineEdit" name="surname"/>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLineEdit" name="company"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
         <size>
-         <width>10</width>
-         <height>10</height>
+         <width>30</width>
+         <height>30</height>
         </size>
        </property>
-      </spacer>
-     </item>
-     <item>
-      <widget class="QPushButton" name="salvar">
        <property name="text">
-        <string>Salvar</string>
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>../assets/icons/icontel.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Cargo</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QLineEdit" name="cargo"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>E-mail</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Sobrenome</string>
        </property>
       </widget>
      </item>
